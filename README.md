@@ -14,7 +14,7 @@
 
 SRGAN was proposed by Twitter researchers. The goal of this design is to recover finer textures from images when they are upscaled, so that the image's quality is not damaged. Other methods for performing this work, such as bilinear interpolation, can be implemented, but they suffer from picture information loss and smoothing. The authors presented two architectures in this paper: one without GAN (SRResNet) and one with GAN (SRGAN). It is determined that SRGAN has higher accuracy and produces more visually appealing images than SRGAN.
 
-**Our approach to solving this problem: **
+**Our approach to solving this problem:**
 
 First we took some video footage, and then we wrote a Python code to convert the video into an image, and then we had to store the image in the source folder. After that, we used a pretrained SAGAN model for taring of our data. This process is called "transfer learning."
 Before training the pretrained model, we had to do some basic things. Firstly, we had to import the necessary libraries into Python, which included Sys, Keras, CV2, Numpy, Skimage, and Matplotlib. And also print the version of the library that we are using in the making of the project.
@@ -36,10 +36,10 @@ Caffe is a deep learning framework made with expression, speed, and modularity i
 
 So, for predicting and classifying gender and age, we first imported some necessary libraries, such as openCV, math, and time. After that, we have defined the age-gender coffee shop model. The network uses 3 convolutional layers, 2 fully connected layers, and a final output layer. The details of the layers are given below.
 
-•	 Conv1: The first convolutional layer has 96 nodes of kernel size 7.
-•	Conv2: The second convolution layer has 256 nodes with a kernel size of 5.
-•	Conv3: The third convolution layer has 384 nodes with a kernel size of 3.
-•	The two fully connected layers have 512 nodes each.
+  - Conv1: The first convolutional layer has 96 nodes of kernel size 7.
+  - Conv2: The second convolution layer has 256 nodes with a kernel size of 5.
+  - Conv3: The third convolution layer has 384 nodes with a kernel size of 3.
+  - The two fully connected layers have 512 nodes each.
 
 For the gender prediction, the output layer in the gender prediction network is of type softmax with 2 nodes indicating the two classes "male" and "female". However, in the case of the age prediction, the problem is approached as a regression problem since we are expecting a real number as the output. However, estimating age accurately using regression is challenging. So, for age detection, eight classes are divided into the following age groups [(0 – 2), (4–6), (8–12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100)]. Thus, the age prediction network has eight nodes in the final softmax layer, indicating the mentioned age ranges.
 Firstly, we created some DNN face detector functions which are used to detect faces. The model is only 2.7MB and is pretty fast, even on the CPU. After writing the face-detecting function, we have written a function that will detect and classify the gender of the images. The forward pass gives the probabilities or confidence of the two classes. We take the maximum of the two outputs and use it as the final gender prediction. After that, we load the age network and use the forward pass to get the output. Since the network architecture is similar to that of the Gender Network, we can take the maximum out of all the outputs to get the predicted age group. Then we will display the output of the final video footage, which will show the age and gender of the character in the video footage.
