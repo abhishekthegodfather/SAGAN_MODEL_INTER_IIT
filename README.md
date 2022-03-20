@@ -1,14 +1,16 @@
 # SAGAN MODEL INTER IIT
 # BOSCH’S AGE AND GENDER DETECTION
 
-**Team Name: “404 Not Found” **
-**Team Member **
+**Team Name: “404 Not Found”**
+
+**Team Member**
+
  - Abhishek Biswas (abhishekbiswas772@gmail.com)
  - Jayesh Lohar (jayeshpanchal063@gmail.com)
  - Aman Tejaswi (atejaswi4@gmail.com)
  - Saidutta Mohanty (sd.moh.800@gmail.com)
 
-**SAGAN MODEL (Super Resolution GAN) **
+**SAGAN MODEL (Super Resolution GAN)**
 
 SRGAN was proposed by Twitter researchers. The goal of this design is to recover finer textures from images when they are upscaled, so that the image's quality is not damaged. Other methods for performing this work, such as bilinear interpolation, can be implemented, but they suffer from picture information loss and smoothing. The authors presented two architectures in this paper: one without GAN (SRResNet) and one with GAN (SRGAN). It is determined that SRGAN has higher accuracy and produces more visually appealing images than SRGAN.
 
