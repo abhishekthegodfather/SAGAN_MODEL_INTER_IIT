@@ -1,18 +1,18 @@
 # SAGAN MODEL INTER IIT
 # BOSCH’S AGE AND GENDER DETECTION
 
-**Team Name: “404 Not Found”
-**Team Member
+**Team Name: “404 Not Found” **
+**Team Member **
  - Abhishek Biswas (abhishekbiswas772@gmail.com)
  - Jayesh Lohar (jayeshpanchal063@gmail.com)
  - Aman Tejaswi (atejaswi4@gmail.com)
  - Saidutta Mohanty (sd.moh.800@gmail.com)
 
-**SAGAN MODEL (Super Resolution GAN)
+**SAGAN MODEL (Super Resolution GAN) **
 
 SRGAN was proposed by Twitter researchers. The goal of this design is to recover finer textures from images when they are upscaled, so that the image's quality is not damaged. Other methods for performing this work, such as bilinear interpolation, can be implemented, but they suffer from picture information loss and smoothing. The authors presented two architectures in this paper: one without GAN (SRResNet) and one with GAN (SRGAN). It is determined that SRGAN has higher accuracy and produces more visually appealing images than SRGAN.
 
-**Our approach to solving this problem:
+**Our approach to solving this problem: **
 
 First we took some video footage, and then we wrote a Python code to convert the video into an image, and then we had to store the image in the source folder. After that, we used a pretrained SAGAN model for taring of our data. This process is called "transfer learning."
 Before training the pretrained model, we had to do some basic things. Firstly, we had to import the necessary libraries into Python, which included Sys, Keras, CV2, Numpy, Skimage, and Matplotlib. And also print the version of the library that we are using in the making of the project.
